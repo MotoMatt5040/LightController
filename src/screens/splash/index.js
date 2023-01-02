@@ -20,7 +20,7 @@ export default function Splash({navigation}) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Splash</Text>
+      <Text style={styles.text}>Light Controller</Text>
     </View>
   );
 }
