@@ -2,39 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export default function Home({navigation}) {
-  // const [state, setState] = useState("")
-  // const [error, setError] = useState("")
-
-  const handleLogout = () => {
-    AsyncStorage.clear();
-    navigation.navigate('Login');
-  };
-
-  //process.env.API_URL = localhost:8098/api/change
-  //process.env.API_URL = wwww.APIHandler.com/api/change
-  // const handleChange = () => {
-  //   fetch(`${process.env.API_URL}/api/change`, {
-  //     method: 'GET'
-  //   })
-  //   .then(res => {
-  //     if(res.status != 200){
-  //       alert("Get request Failed")
-  //       throw Error("Could not Fetch")
-  //     }
-
-  //     return res.json();
-  //   })
-  //   .then(res => {
-  //     color1 = res["info"];
-  //     color2 = res["info2"];
-
-  //   })
-  //   .catch(error => {
-  //     console.log(error)
-  //     setError(error)
-  //   })
-  // }
+export default function Presets({navigation}) {
 
   const handleDeviceConfiguration = () => {
     //fetch current device information
@@ -52,13 +20,9 @@ export default function Home({navigation}) {
       </View>
       <View style={styles.innerContainer}>
         <Text style={styles.text}>
-          This is the home screen
+          This is the presets screen
         </Text>
       </View>
-      {/* <Text style={styles.text}>Home</Text>
-      <TouchableOpacity style={styles.button} onPress={handleLogout}>
-        <Text style={styles.textButton}>Logout</Text>
-      </TouchableOpacity> */}
     </View>
     
   );
